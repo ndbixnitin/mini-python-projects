@@ -6,11 +6,11 @@ print("======================================")
 print("          SIMPLE CALCULATOR")
 print("======================================")
 
-# Take two numbers from the user
+# Taking input from user
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 
-# Perform calculations
+# Calculations
 addition = num1 + num2
 subtraction = num1 - num2
 multiplication = num1 * num2
@@ -21,12 +21,12 @@ print("Addition       :", addition)
 print("Subtraction    :", subtraction)
 print("Multiplication :", multiplication)
 
-# Check before division
-if num2 != 0:
+# Division
+if num2 == 0:
+    print("Division       : Cannot divide by zero")
+else:
     division = num1 / num2
     print("Division       :", division)
-else:
-    print("Division       : Cannot divide by zero")
 
 print("======================================")
 print("       Calculator Completed!")
